@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konto und Daten löschen – JFV Wolfstein App</title>
+<style>
+  :root {
+    --blau: #3F66B0;
+    --akzent: #7C4DB8;
+    --ink: #1a1f2e;
+    --ink-muted: #5a6478;
+    --border: #e2e6ee;
+    --bg: #f7f9fc;
+    --surface: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    padding: 24px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header {
+    background: linear-gradient(135deg, var(--blau), var(--akzent));
+    color: #fff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    margin-bottom: 28px;
+  }
+  header .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.85;
+    margin-bottom: 10px;
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blau);
+    margin-bottom: 14px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+  }
+  p { margin-bottom: 12px; color: var(--ink); }
+  ul { margin: 8px 0 12px 22px; }
+  li { margin-bottom: 7px; }
+  .steps { counter-reset: step; list-style: none; margin-left: 0; }
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 44px;
+    margin-bottom: 16px;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: var(--blau);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .muted { color: var(--ink-muted); font-size: 15px; }
+  a { color: var(--blau); }
+  .mail {
+    display: inline-block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-weight: 600;
+    color: var(--blau);
+    text-decoration: none;
+  }
+  footer {
+    text-align: center;
+    color: var(--ink-muted);
+    font-size: 13px;
+    padding: 20px 0 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">JFV Wolfstein Westerwald-Sieg e.V.</div>
+    <h1>Konto und Daten löschen</h1>
+  </header>
+
+  <div class="card">
+    <p>Diese Seite erklärt, wie du dein Konto in der App des JFV Wolfstein Westerwald-Sieg e.V. und die damit verbundenen Daten löschen kannst.</p>
+  </div>
+
+  <div class="card">
+    <h2>Direkt in der App löschen</h2>
+    <p>Am schnellsten löschst du dein Konto direkt in der App:</p>
+    <ol class="steps">
+      <li>Öffne die App und melde dich an.</li>
+      <li>Gehe zum Bereich <strong>Profil</strong>.</li>
+      <li>Tippe auf <strong>„Konto löschen"</strong> und bestätige mit deinem Passwort.</li>
+    </ol>
+    <p class="muted">Nach der Bestätigung wird die Löschung mit einer Frist von 7 Tagen vorgemerkt. Innerhalb dieser Frist kannst du die Löschung widerrufen, indem du dich erneut anmeldest. Nach Ablauf der Frist werden dein Konto und die zugehörigen Daten endgültig gelöscht.</p>
+  </div>
+
+  <div class="card">
+    <h2>Löschung per E-Mail anfordern</h2>
+    <p>Alternativ kannst du die Löschung deines Kontos jederzeit per E-Mail anfordern:</p>
+    <p><a class="mail" href="mailto:info@jfv-wolfstein.de">info@jfv-wolfstein.de</a></p>
+    <p class="muted">Bitte sende die Anfrage von der E-Mail-Adresse, mit der du in der App registriert bist, damit wir dein Konto eindeutig zuordnen können.</p>
+  </div>
+
+  <div class="card">
+    <h2>Welche Daten werden gelöscht?</h2>
+    <p>Bei der Löschung deines Kontos werden insbesondere folgende Daten entfernt:</p>
+    <ul>
+      <li>Name (Vor- und Nachname)</li>
+      <li>E-Mail-Adresse</li>
+      <li>Telefonnummer (sofern hinterlegt)</li>
+      <li>Profilbild (sofern hinterlegt)</li>
+      <li>Deine Zu- und Absagen zu Terminen</li>
+      <li>Deine Mannschafts- und Rollenzuordnung</li>
+    </ul>
+
+    <h3>Aufbewahrung</h3>
+    <p class="muted">Sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen, werden deine personenbezogenen Daten vollständig gelöscht. In Einzelfällen können Daten aufbewahrt werden, soweit dies gesetzlich vorgeschrieben ist (z. B. steuer- oder vereinsrechtliche Pflichten); diese Daten werden nach Ablauf der jeweiligen Frist gelöscht.</p>
+  </div>
+
+  <div class="card">
+    <h2>Fragen zum Datenschutz?</h2>
+    <p>Weitere Informationen findest du in unserer <a href="https://jmh312.github.io/jfv-wolfstein-app-privacy/">Datenschutzerklärung</a>. Bei Fragen erreichst du uns unter <a href="mailto:info@jfv-wolfstein.de">info@jfv-wolfstein.de</a>.</p>
+  </div>
+
+  <footer>
+    JFV Wolfstein Westerwald-Sieg e.V. · Talstraße 1 · 57629 Norken
+  </footer>
+
+</div>
+</body>
+</html>
